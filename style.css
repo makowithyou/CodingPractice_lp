@@ -2,18 +2,16 @@
 /* 共通 css */
 /*  */
 :root {
-    --main-bg-color: ;
-    --sub-bg-color: ;
+    --main-color: #FF2A2A;
+    --bg-color: #E8E8E8;
     --font-color: ;
-    --border-color: ;
 }
 * {
     box-sizing: border-box;
-    color: ;
+    color: var(--font-color);
 }
 body {
-    /* https://ics.media/entry/200317/#各osのフォント指定はどれがいいか */
-    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    font-family: "游ゴシック";
     margin: unset;
 }
 img {
@@ -23,21 +21,49 @@ h1, h2, h3, h4, h5, p, ul, ol, dl, dd {
     margin: unset;
     padding: unset;
 }
+h1 {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 1.67;
+    letter-spacing: 0.1em;
+    color: var(--font-color);
+}
 h2 {
-    font-weight: ;
-    font-size: px;
-    color: ;
+    font-weight: bold;
+    font-size: 28px;
+    letter-spacing: 0.1em;
+    color: var(--font-color);
+}
+h3 {
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    color: var(--font-color);
+}
+h4 {
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    color: var(--font-color);
+}
+p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.5px;
+    letter-spacing: 0.1em;
+    color: var(--font-color);
 }
 a, a:visited {
-    font-weight: ;
-    font-size: px;
-    color: ;
+    font-weight: normal;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    color: var(--font-color);
     text-decoration: none;
 }
 p.copy {
-    font-weight: ;
-    font-size: px;
-    color: ;
+    font-weight: normal;
+    font-size: 10px;
+    color: var(--font-color);
 }
 div.container {
     max-width: 860px;
@@ -55,4 +81,20 @@ div.container {
 /* 広い画面向けの CSS */
 /*  */
 @media (min-width: 900px) {
+h1 {
+    font-size: 46px;
+    line-height: 1.6;
+}
+h2 {
+    font-size: 36px;
+}
+h3 {
+    font-size: 28px;
+}
+h4 {
+    font-size: 18px;
+}
+a, a:visited {
+    font-size: 14px;
+}
 }
