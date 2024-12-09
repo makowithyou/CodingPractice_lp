@@ -16,7 +16,7 @@ body {
 }
 img {
     display: block;
-    width: 100px;
+    width: 100px;/* 後で消す */
 }
 h1, h2, h3, h4, h5, p, ul, ol, dl, dd {
     margin: unset;
@@ -82,7 +82,27 @@ div.container {
 /*  */
 /* 狭い画面向けの既定の CSS レイアウト値 */
 /*  */
-
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img {
+    width: 100px;
+    margin-left: 25px;
+}
+header div.hamburger menu {
+    display: none;
+}
+header div.hamburger input {
+    display: none;
+}
+header div.hamburger {
+    width: 75px;
+    height: 75px;
+    background-color: var(--main-color);
+}
+header div.hamburger label {}
 
 /*  */
 /* 広い画面向けの CSS */
@@ -100,6 +120,9 @@ h3 {
 }
 h4 {
     font-size: 18px;
+}
+h5 {
+    font-size: 16px;
 }
 a, a:visited {
     font-size: 14px;
