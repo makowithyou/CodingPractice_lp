@@ -16,6 +16,7 @@ body {
 }
 img {
     display: block;
+    width: 100px;
 }
 h1, h2, h3, h4, h5, p, ul, ol, dl, dd {
     margin: unset;
@@ -46,10 +47,16 @@ h4 {
     letter-spacing: 0.1em;
     color: var(--font-color);
 }
+h5 {
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    color: var(--font-color);
+}
 p {
     font-weight: normal;
     font-size: 16px;
-    line-height: 1.5px;
+    line-height: 1.5;
     letter-spacing: 0.1em;
     color: var(--font-color);
 }
