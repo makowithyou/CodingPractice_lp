@@ -18,7 +18,7 @@ img {
     display: block;
     width: 100px;/* 後で消す */
 }
-h1, h2, h3, h4, h5, p, ul, ol, dl, dd {
+h1, h2, h3, h4, h5, p, ul, ol, dl, dd, menu {
     margin: unset;
     padding: unset;
 }
@@ -92,7 +92,13 @@ header img {
     margin-left: 25px;
 }
 header div.hamburger menu {
-    display: none;
+    display: block;
+    background-color: var(--main-color);
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
 }
 header div.hamburger input {
     display: none;
@@ -110,7 +116,7 @@ header div.hamburger span {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
 }
 header div.hamburger span:first-of-type {
     top: calc(50% - 11px);
@@ -128,12 +134,25 @@ header div.hamburger label {
 }
 /* クリックしたとき */
 header div.hamburger input:checked + span {
-    width: 43px;
-    left: calc(50% - 4px);
-    transform: rotate(-35deg) translateX(-50%);
-    /* transform-origin: 100% 0%; */
-    /* width: 43px; */
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
+    top: 0;
+    left: 0;
+    width: 45px;
+    transform: rotate(-45deg) translate3d(-16px, 37px, 0px);
+}
+header div.hamburger input:checked + span + span {
+    transition: all 0.3s ease;
+    top: 0;
+    left: 0;
+    width: 45px;
+    transform: rotate(45deg) translate3d(37px, 16px, 0px);
+}
+header div.hamburger input:checked + span + span  + span{
+    transition: all 0.3s ease;
+    top: 0;
+    left: 0;
+    width: 45px;
+    transform: rotate(45deg) translate3d(37px, 16px, 0px);
 }
 
 
