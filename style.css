@@ -134,12 +134,19 @@ header div.hamburger span:last-of-type {
 }
 header div.hamburger_menu {
     display: none;
-    display: block;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--main-color);
     width: 100cqw;
     height: 100vh;
     position: fixed;
     left: 0;
+}
+header div.hamburger_menu div {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center
 }
 header div.hamburger_menu menu {
     display: grid;
@@ -154,6 +161,23 @@ header div.hamburger_menu menu li {
     line-height: 1.5;
     letter-spacing: 0.1em;
     color: #FFFFFF;
+}
+header div.hamburger_menu a.button {
+    font-weight: bold;
+    font-size: 16px;
+    border: 1px solid #FFFFFF;
+    padding: 15px 46.5px;
+    position: relative;
+}
+header div.hamburger_menu a.button::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: -6px;
+    bottom: -6px;
+    border-right: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
 }
 /* クリックしたとき */
 header div.hamburger input:checked + span {
@@ -178,7 +202,7 @@ header div.hamburger input:checked + span + span  + span {
     transform: rotate(45deg) translate3d(37px, 16px, 0px);
 }
 header div.hamburger input:checked + span + span  + span + div.hamburger_menu {
-    display: block;
+    display: flex;
 }
 
 
