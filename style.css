@@ -179,7 +179,7 @@ header div.hamburger_menu a.button::after {
     border-right: 1px solid #FFFFFF;
     border-bottom: 1px solid #FFFFFF;
 }
-/* クリックしたとき */
+/* クリックしたとき ここから */
 header div.hamburger input:checked + span {
     transition: all 0.3s ease;
     top: 0;
@@ -204,7 +204,42 @@ header div.hamburger input:checked + span + span  + span {
 header div.hamburger input:checked + span + span  + span + div.hamburger_menu {
     display: flex;
 }
+/* クリックしたとき ここまで */
 
+main #Mainvisual .fade {
+    position: relative;
+    height: 375px;
+}
+main #Mainvisual .fade .img {
+    width: 100%;
+    height: 375px;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset #FFFFFF 0px 0px 20px 20px;
+    opacity: 0;
+    animation: fade 15s infinite;
+    position: absolute;
+}
+main #Mainvisual .fade .img:nth-of-type(1) {
+    background-image: url("https://lh3.googleusercontent.com/d/1KLVyW9D2LgeHoSyIpDbkNmshxS9e1AgL");
+    animation-delay: 0s;
+}
+main #Mainvisual .fade .img:nth-of-type(2) {
+    background-image: url("https://lh3.googleusercontent.com/d/1OuNMQmQmpn4px0NjX_0AOqTo2Py1Ka7T");
+    animation-delay: 5s;
+}
+main #Mainvisual .fade .img:nth-of-type(3) {
+    background-image: url("https://lh3.googleusercontent.com/d/13C4-imlFcRsNkuGb_kdCyFW5gXHfjwdd");
+    animation-delay: 10s;
+}
+/* スライドアニメーション ここから */
+@keyframes fade {
+    0% {opacity: 0;}
+    30% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 0;}
+}
+/* スライドアニメーション ここまで */
 
 
 /*  */
