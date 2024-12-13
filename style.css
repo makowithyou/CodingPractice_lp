@@ -404,10 +404,22 @@ main div#Feedback .profile span {
     letter-spacing: 0.1em;
     text-align: center;
 }
+
 main div#About {
     margin-top: 80px;
     padding-top: 60px;
     background-image: url("https://lh3.googleusercontent.com/d/1nhrsMN5_hj94Lf4PW5bjvcWzcSAOVTpA");
+    animation: linear infinite bg_animation;
+}
+@keyframes bg_animation{
+    from {
+        background-position-x: right;
+        background-position-y: bottom;
+    }
+    to {
+        background-position-x: left;
+        background-position-y: top;
+    }
 }
 
 
