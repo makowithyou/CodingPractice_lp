@@ -85,6 +85,9 @@ div.container {
 a.button {
     color: #FFFFFF;
 }
+.grid {
+    display: grid;
+}
 
 
 
@@ -304,6 +307,7 @@ main div#Reason .slide .item:first-of-type {
     margin-right: 16px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    animation: 250ms ease-in slidein_left_to_right;
 }
 main div#Reason .slide .item:first-of-type img {
     width: 87px;
@@ -313,14 +317,40 @@ main div#Reason .slide .item:last-of-type {
     margin-left: 16px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    animation: 250ms ease-in slidein_right_to_left;
 }
 main div#Reason .slide .item:last-of-type img {
     width: 51px;
     height: 60px;
 }
+/* スライドアニメーション ここから */
+@keyframes slidein_left_to_right {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slidein_right_to_left {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+/* スライドアニメーション ここまで */
 
 main div#Feedback {
     padding-top: 80px;
+}
+main div#Feedback .grid {
+    row-gap: 40px;
 }
 main div#Feedback .item {
     display: grid;
@@ -358,7 +388,11 @@ main div#Feedback .profile span {
     letter-spacing: 0.1em;
     text-align: center;
 }
-
+main div#About {
+    margin-top: 80px;
+    padding-top: 60px;
+    background-image: url("https://lh3.googleusercontent.com/d/1nhrsMN5_hj94Lf4PW5bjvcWzcSAOVTpA");
+}
 
 
 
