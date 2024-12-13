@@ -260,8 +260,6 @@ main div#Mainvisual .fade .img:nth-of-type(3) {
 
 main div#Mainvisual .CTA_top {
     padding: 0 16px;
-    display: flex;
-    flex-direction: column;
 }
 main div#Mainvisual .CTA_top h1 {
     padding: 10px 0;
@@ -269,10 +267,12 @@ main div#Mainvisual .CTA_top h1 {
 main div#Mainvisual .CTA_top a.button {
     background-color: var(--main-color);
     font-size: 24px;
-    padding: 15px 29px 15px 67px;
-    align-self: center;
+    padding: 15px 0;
     border-radius: 10px;
     box-shadow: #7A051C 0px 5px;
+    width: 100%;
+    display: block;
+    text-align: center;
 }
 main div#Mainvisual .CTA_top a.button::after {
     content: "〉";
@@ -338,10 +338,12 @@ main div#Reason .slide .item:last-of-type img {
 @keyframes slidein_right_to_left {
   from {
     transform: translateX(100%);
+    opacity: 0;
   }
 
   to {
     transform: translateX(0);
+    opacity: 1;
   }
 }
 /* スライドアニメーション ここまで */
@@ -355,7 +357,21 @@ main div#Feedback .grid {
 main div#Feedback .item {
     display: grid;
     row-gap: 30px;
+    animation: 500ms linear fadein;
 }
+/* ふきだしアニメーション ここから */
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+/* ふきだしアニメーション ここまで */
 main div#Feedback .item p {
     background-color: #E9F1FB;
     padding: 20px;
