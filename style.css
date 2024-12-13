@@ -80,6 +80,7 @@ p.copy {
 div.container {
     max-width: 860px;
     margin: 0 auto;
+    padding: 0 16px;
 }
 a.button {
     color: #FFFFFF;
@@ -317,6 +318,48 @@ main div#Reason .slide .item:last-of-type img {
     width: 51px;
     height: 60px;
 }
+
+main div#Feedback {
+    padding-top: 80px;
+}
+main div#Feedback .item {
+    display: grid;
+    row-gap: 30px;
+}
+main div#Feedback .item p {
+    background-color: #E9F1FB;
+    padding: 20px;
+    position: relative;
+}
+main div#Feedback .item p::after {
+    content: "";
+    display: block;
+    width: 21px;
+    height: 21px;
+    background-color: #E9F1FB;
+    transform: rotate(45deg) translateX(-15px);
+    position: absolute;
+    left: 50%;
+    bottom: -21px;
+}
+main div#Feedback .profile {
+    display: grid;
+    row-gap: 10px;
+    justify-items: center;
+}
+main div#Feedback .profile img {
+    background-color: #CCCCCC;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+main div#Feedback .profile span {
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+
 
 
 
