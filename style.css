@@ -126,7 +126,7 @@ header div.hamburger {
     z-index: 1;
 }
 header div.hamburger:hover {
-    opacity: 0.7;
+    background-color: rgb(255 42 42 / 70%);
     transition: all 250ms ease;
 }
 header div.hamburger label {
