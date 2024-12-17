@@ -1,3 +1,7 @@
+.js_sample.cg_color {
+    color: red;
+}
+
 /*  */
 /* 共通 css */
 /*  */
@@ -345,7 +349,7 @@ main div#Reason .slide .item:first-of-type {
     margin-right: 16px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    animation: 250ms ease-in slidein_left_to_right;
+    animation: 500ms ease-in slidein_left_to_right;
 }
 main div#Reason .slide .item:first-of-type img {
     width: 87px;
@@ -355,7 +359,7 @@ main div#Reason .slide .item:last-of-type {
     margin-left: 16px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    animation: 250ms ease-in slidein_right_to_left;
+    animation: 500ms ease-in slidein_right_to_left;
 }
 main div#Reason .slide .item:last-of-type img {
     width: 51px;
@@ -525,7 +529,6 @@ footer .grid {
     row-gap: 30px;
     margin-bottom: 60px;
 }
-
 
 
 /*  */
