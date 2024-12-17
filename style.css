@@ -555,6 +555,14 @@ a, a:visited {
     font-size: 14px;
 }
 
+header {
+    height: 100px;
+}
+header div.hamburger {
+    width: 100px;
+    height: 100px;
+}
+
 main div#Mainvisual {
     height: 720px;
     position: relative;
@@ -570,7 +578,6 @@ main div#Mainvisual .fade .img {
 main div#Mainvisual .CTA_top {
     padding: unset;
     margin-left: 10%;
-    width: 33%;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
