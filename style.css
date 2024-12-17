@@ -449,16 +449,14 @@ main div#About {
     padding-top: 60px;
     padding-bottom: 60px;
     background-image: url("https://lh3.googleusercontent.com/d/1nhrsMN5_hj94Lf4PW5bjvcWzcSAOVTpA");
-    animation: linear infinite bg_animation;
+    animation: 10s linear infinite bg_animation;
 }
-@keyframes bg_animation{
-    from {
-        background-position-x: right;
-        background-position-y: bottom;
+@keyframes bg_animation {
+    0% {
+        background-position: 0 0;
     }
-    to {
-        background-position-x: left;
-        background-position-y: top;
+    100% {
+        background-position: -700px 700px;
     }
 }
 
