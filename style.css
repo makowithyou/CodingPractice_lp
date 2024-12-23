@@ -331,6 +331,7 @@ main div#Reason .slide .js_slideIn {
     padding: 19px 20px;
     display: flex;
     align-items: center;
+    opacity: 0;
 }
 main div#Reason .slide .js_slideIn img {
     margin-right: 30px;
@@ -339,7 +340,7 @@ main div#Reason .slide .is_inview:first-of-type {
     margin-right: 16px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    animation: 500ms ease-in slidein_left_to_right;
+    animation: 500ms ease-in forwards slidein_left_to_right;
 }
 main div#Reason .slide .js_slideIn:first-of-type img {
     width: 87px;
@@ -349,7 +350,7 @@ main div#Reason .slide .is_inview:last-of-type {
     margin-left: 16px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    animation: 500ms ease-in slidein_right_to_left;
+    animation: 500ms ease-in forwards slidein_right_to_left;
 }
 main div#Reason .slide .js_slideIn:last-of-type img {
     width: 51px;
@@ -362,18 +363,18 @@ main div#Reason .slide .js_slideIn:last-of-type img {
   }
 
   to {
+    opacity: 1;
     transform: translateX(0);
   }
 }
 @keyframes slidein_right_to_left {
   from {
     transform: translateX(100%);
-    opacity: 0;
   }
 
   to {
-    transform: translateX(0);
     opacity: 1;
+    transform: translateX(0);
   }
 }
 /* スライドアニメーション ここまで */
