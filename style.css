@@ -11,7 +11,7 @@
     color: var(--font-color);
 }
 body {
-    font-family: "游ゴシック";
+    font-family: "游ゴシック", "Helvetica Neue", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
     margin: unset;
     container-type: inline-size;
 }
