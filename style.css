@@ -293,12 +293,6 @@ main div#Mainvisual .CTA_top a.button {
     text-align: center;
     position: relative;
 }
-main div#Mainvisual .CTA_top a.button::after {
-    /* content: "〉";
-    padding-left: 26px;
-    font-weight: bold;
-    position: absolute; */
-}
 main div#Mainvisual .CTA_top a.button::before {
     content: "";
     position: absolute;
@@ -336,32 +330,32 @@ main div#Reason .slide {
     display: grid;
     row-gap: 40px;
 }
-main div#Reason .slide .item {
+main div#Reason .slide .js_slideIn {
     background-color: #FFFFFF;
     padding: 19px 20px;
     display: flex;
     align-items: center;
 }
-main div#Reason .slide .item img {
+main div#Reason .slide .js_slideIn img {
     margin-right: 30px;
 }
-main div#Reason .slide .item:first-of-type {
+main div#Reason .slide .is_inview:first-of-type {
     margin-right: 16px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     animation: 500ms ease-in slidein_left_to_right;
 }
-main div#Reason .slide .item:first-of-type img {
+main div#Reason .slide .js_slideIn:first-of-type img {
     width: 87px;
     height: 60px;
 }
-main div#Reason .slide .item:last-of-type {
+main div#Reason .slide .is_inview:last-of-type {
     margin-left: 16px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     animation: 500ms ease-in slidein_right_to_left;
 }
-main div#Reason .slide .item:last-of-type img {
+main div#Reason .slide .js_slideIn:last-of-type img {
     width: 51px;
     height: 60px;
 }
@@ -397,7 +391,7 @@ main div#Feedback {
 main div#Feedback .grid {
     row-gap: 40px;
 }
-main div#Feedback .item {
+main div#Feedback .is_inview {
     display: flex;
     flex-direction: column;
     row-gap: 30px;
@@ -416,12 +410,12 @@ main div#Feedback .item {
     }
 }
 /* ふきだしアニメーション ここまで */
-main div#Feedback .item p {
+main div#Feedback .js_fadeIn p {
     background-color: #E9F1FB;
     padding: 20px;
     position: relative;
 }
-main div#Feedback .item p::after {
+main div#Feedback .js_fadeIn p::after {
     content: "";
     display: block;
     width: 21px;
@@ -592,14 +586,14 @@ main div#Reason .slide {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
 }
-main div#Reason .slide .item {
+main div#Reason .slide .js_slideIn {
     padding: 70px 0;
     justify-content: center;
 }
-main div#Reason .slide .item:first-of-type {
+main div#Reason .slide .js_slideIn:first-of-type {
     margin: unset;
 }
-main div#Reason .slide .item:last-of-type {
+main div#Reason .slide .js_slideIn:last-of-type {
     margin: unset;
     grid-column-start: 2;
     grid-row-start: 2;
@@ -612,24 +606,24 @@ main div#Feedback {
 main div#Feedback .grid {
     row-gap: 60px;
 }
-main div#Feedback .item {
+main div#Feedback .js_fadeIn {
     flex-direction: row-reverse;
     justify-content: flex-end;
     align-items: flex-start;
     column-gap: 25px;
 }
-main div#Feedback .item p {
+main div#Feedback .js_fadeIn p {
     width: 60%;
 }
-main div#Feedback .item p::after {
+main div#Feedback .js_fadeIn p::after {
     top: 50%;
     left: -16px;
     transform: rotate(45deg) translateY(-50%);
 }
-main div#Feedback .item:nth-of-type(2) {
+main div#Feedback .js_fadeIn:nth-of-type(2) {
     flex-direction: row;
 }
-main div#Feedback .item:nth-of-type(2) p::after {
+main div#Feedback .js_fadeIn:nth-of-type(2) p::after {
     top: 50%;
     left: calc(100% - 17px);
     transform: rotate(45deg) translateY(-50%);
