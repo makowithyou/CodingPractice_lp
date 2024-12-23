@@ -358,13 +358,13 @@ main div#Reason .slide .js_slideIn:last-of-type img {
 /* スライドアニメーション ここから */
 @keyframes slidein_left_to_right {
   from {
-    transform: translateX(-100%);
     opacity: 0;
+    transform: translateX(-100%);
   }
 
   to {
-    transform: translateX(0);
     opacity: 1;
+    transform: translateX(0);
   }
 }
 @keyframes slidein_right_to_left {
